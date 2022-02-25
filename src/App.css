@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+}
+body {
+  background-color: #dbe9f0 !important;
+  font-family: 'Acme', sans-serif !important;
+}
+
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.app__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.app__header .font-style {
+  font-family: 'Rubik Beastly', cursive !important;
+  font-weight: lighter !important;
+  color: rgb(223, 28, 28) !important;
+  word-spacing: 10px !important;
+}
+
+.app__header .text-color {
+  color: rgb(29, 181, 207);
+}
+
+.app__dropdown {
+  background-color: white;
+  padding: 10px !important;
+  border-radius: 5px;
+}
+
+.app__left {
+  flex: 0.7;
+  margin-left: 20px;
+}
+
+.app__left .MuiSelect-root {
+  font-size: 1.2rem;
+  color: rgb(29, 181, 207);
+}
+
+.app__stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__stats .MuiCardContent-root:hover {
+  background-color: rgb(245, 241, 237);
+}
+
+.app__right {
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.app__right .MuiCardContent-root {
+  flex-direction: column;
+  display: flex;
+  flex-grow: 1;
+}
+
+.app__graph {
+  flex-grow: 1;
+}
+
+.app__graphTitle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.map {
+  margin-right: 10px;
+}
+
+@media (max-width: 990px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .map {
+    margin-right: 3px;
+  }
+
+  .app__right {
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .app__left {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .app__stats {
+    display: inline;
+  }
+
+  .app__stats .MuiPaper-root {
+    margin-bottom: 10px;
+  }
+  .app__stats p {
+    font-size: 1rem !important;
+    padding-bottom: 5px;
+    font-weight: bold;
+  }
+  .app__stats h2 {
+    font-size: 1.1rem !important;
+  }
+
+  .map {
+    max-height: 400px;
+  }
+
+  .app__header h1 {
+    font-size: 2.2rem;
+  }
+
+  .infoBox h3 {
+    font-size: 1.2rem !important;
+  }
+
+  .app__header .MuiSelect-root {
+    font-size: 0.9rem !important;
+  }
+
+  .app__graph .chartjs-render-monitor {
+    height: 300px !important;
+  }
+}
